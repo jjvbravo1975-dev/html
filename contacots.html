@@ -38,14 +38,18 @@
     </section>
     <img src="ima1.jpg">
     <div>
-      <form action="">
+      <form action="index.html" method="get">
         <label for="fname">Primer Nombre:</label><br>
-        <input type="text" id="fname" name="fname" value="nombre"><br>
+        <input type="text" id="fname" name="fname" required value="" placeholder=" ingrese su nombre" minlength="1"
+          maxlength="15"><br>
         <label for="lname">apellidos :</label><br>
-        <input type="text" id="lname" name="lname" value="apellido"><br>
-        <label for="lname">correo :</label><br>
-        <input type="email" id="lname" name="lname" value="correo"><br>
-        <input type="submit" value="Submit">
+        <input type="text" id="lname" name="lname" required value="" placeholder="apellido ingreso "><br>
+        <label for="lname">telefono :</label><br>
+        <input type="text" id="lname" name="telefoo" placeholder="telefono " pattern="^[0-9,$]*$"><br>
+        <label for="lname">email :</label><br>
+
+        <input type="email" id="lname" name="lname" required><br>
+        <button> enviar</button>
       </form>
     </div>
 
