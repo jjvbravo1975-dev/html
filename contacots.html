@@ -1,85 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" target="_blank"> inicio</a>
+        <a href="nosotros.html" target="_blank"> nosotros</a>
+        <a href="servicios.html" target="_blank"> servicio</a>
+        <a href="galeria.html" target="_blank"> galeria</a>
+        <a href="contacots.html" target="_blank"> contacto</a>
+      </nav>
+      <h1>contactos</h1>
+    </header>
+    <main>
+      <h2>Teléfono móvil</h2>
+      <section>
+        <p>
+          Un teléfono móvil o teléfono celular (mobile phone o cell phone en
+          inglés), (Esp. móvil) (Am. celular)2​3​ (acortado como móvil o
+          celular)4​ es un dispositivo electrónico portátil, que puede permitir
+          llamadas a través de una onda de radiofrecuencia, mientras el usuario
+          se está moviendo dentro de un área de servicio telefónico.5​ El enlace
+          de radiofrecuencia establece una conexión con los sistemas de
+          conmutación de un operador de telefonía móvil, que proporciona acceso
+          a la red telefónica pública conmutada (PSTN). La mayoría de los
+          servicios de telefonía móvil modernos utilizan una arquitectura de red
+          de celdas (red celular) y por lo tanto los teléfonos móviles son, con
+          frecuencia, llamados celulares.5​
+        </p>
+      </section>
+      <img src="ima1.jpg" />
+      <div>
+        <form action="index.html" method="get" enctype="multipart/form-data">
+          <label for="fname">Primer Nombre:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            required
+            value=""
+            placeholder=" ingrese su nombre"
+            minlength="1"
+            maxlength="15"
+          /><br />
+          <label for="lname">apellidos :</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            required
+            value=""
+            placeholder="apellido ingreso "
+          /><br />
+          <label for="lname">telefono :</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="telefoo"
+            placeholder="telefono "
+            pattern="^[0-9,$]*$"
+          /><br />
+          <label for="lname">email :</label><br />
 
-<body>
+          <input type="email" id="lname" name="lname" required /><br />
 
-  <header>
-    <nav>
-      <a href="index.html" target="_blank"> inicio</a>
-      <a href="nosotros.html" target="_blank"> nosotros</a>
-      <a href="servicios.html" target="_blank"> servicio</a>
-      <a href="galeria.html" target="_blank"> galeria</a>
-      <a href="contacots.html" target="_blank"> contacto</a>
-    </nav>
-    <h1>contactos</h1>
-  </header>
-  <main>
-    <h2>Teléfono móvil</h2>
-    <section>
-      <p>
-        Un teléfono móvil o teléfono celular (mobile phone o cell phone en inglés), (Esp. móvil) (Am. celular)2​3​
-        (acortado
-        como móvil o celular)4​ es un dispositivo electrónico portátil, que puede permitir llamadas a través de una onda
-        de
-        radiofrecuencia, mientras el usuario se está moviendo dentro de un área de servicio telefónico.5​ El enlace de
-        radiofrecuencia establece una conexión con los sistemas de conmutación de un operador de telefonía móvil, que
-        proporciona acceso a la red telefónica pública conmutada (PSTN). La mayoría de los servicios de telefonía móvil
-        modernos
-        utilizan una arquitectura de red de celdas (red celular) y por lo tanto los teléfonos móviles son, con
-        frecuencia,
-        llamados celulares.5​
-      </p>
-    </section>
-    <img src="ima1.jpg">
-    <div>
-      <form action="index.html" method="get">
-        <label for="fname">Primer Nombre:</label><br>
-        <input type="text" id="fname" name="fname" required value="" placeholder=" ingrese su nombre" minlength="1"
-          maxlength="15"><br>
-        <label for="lname">apellidos :</label><br>
-        <input type="text" id="lname" name="lname" required value="" placeholder="apellido ingreso "><br>
-        <label for="lname">telefono :</label><br>
-        <input type="text" id="lname" name="telefoo" placeholder="telefono " pattern="^[0-9,$]*$"><br>
-        <label for="lname">email :</label><br>
+          <label for="lname">numero :</label><br />
+          <input
+            type="number"
+            name="numero"
+            placeholder="numero "
+            step="5"
+          /><br />
 
-        <input type="email" id="lname" name="lname" required><br>
+          <label for="lname">color :</label><br />
+          <input type="color" name="colo" placeholder="color " step="5" /><br />
 
-        <label for="lname">numero :</label><br>
-        <input type="number" name="numero" placeholder="numero " step="5"><br>
+          <div>
+            <label for="html">html </label>
+            <input type="checkbox" id="html" />
+            <label for="javascript">javascript</label>
+            <input type="checkbox" id="javascript" />
+            <label for="css">css</label>
+            <input type="checkbox" id="css" />
+          </div>
+          <div>
+            <label for="hombre"> Mujer</label>
+            <input type="radio" name="genero" id="Mujer" />
+            <label for="hombre"> hombre</label>
+            <input type="radio" name="genero" id="Hombre" />
+          </div>
+          <div>
+            <h2>lista de seleccion</h2>
+            <label for="lang">ciudad</label>
+            <select name="cuidades" id="lang">
+              <option value="Bogota">bogota</option>
+              <option value="Cali">cali</option>
+              <option value="Cucuta">cucuta</option>
+              <option value="Manizales">manizales</option>
+            </select>
+          </div>
+          <div>
+            <h3>enviar archivos</h3>
+            <input type="file" />
+          </div>
+          <div>
+            <h3>enviar archivos</h3>
+            <input type="file" accept="image/jpeg" multiple />
+          </div>
 
-        <label for="lname">color :</label><br>
-        <input type="color" name="colo" placeholder="color " step="5"><br>
-
-        <div>
-          <label for="html">html </label>
-          <input type="checkbox" id="html">
-          <label for="javascript">javascript</label>
-          <input type="checkbox" id="javascript">
-          <label for="css">css</label>
-          <input type="checkbox" id="css">
-        </div>
-        <div>
-          <label for="hombre"> Mujer</label>
-          <input type="radio" name="genero" id="Mujer">
-          <label for="hombre"> hombre</label>
-          <input type="radio" name="genero" id="Hombre">
-        </div>
-
-
-
-        <button> enviar</button>
-      </form>
-    </div>
-
-
-  </main>
-  <footer></footer>
-</body>
-
+          <div>
+            <h3>text area</h3>
+            <textarea id="idtext" name="w3review" rows="4" cols="50">
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quae adipisci necessitatibus molestiae doloribus! Expedita, labore. Neque, doloremque. Praesentium alias cupiditate a! Dolor modi accusantium assumenda? Sequi mollitia at dolore.
+            </textarea>
+          </div>
+          <div>
+            <h3>fecha</h3>
+            <input type="date" />
+          </div>
+          <button>enviar</button>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
